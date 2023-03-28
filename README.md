@@ -5,7 +5,7 @@
 
 **Why do we try to finetune these BLOOM models? Because the BLOOM licence seems to be more relax with [The BigScience RAIL License](https://bigscience.huggingface.co/blog/the-bigscience-rail-license)! Moreover, BLOOM models were trained on the dataset having [59 Languages (46 natural and 13 programing languages](https://huggingface.co/bigscience/bloom) including [2.7% Vietnamese (7^th in total 46 natural languages)](https://huggingface.co/bigscience/bloom)**
 
-**For example, you can try our finetuned doctorwithbloom (BLOOMZ-b71-mt-chatdoctor-200k) model out on Colab [here](https://colab.research.google.com/drive/1LY5Ds6qyr_Drpp9WSdt-ZEMvvrFICdEx#scrollTo=X_pz8MuY84Qh)!!!!!**
+**For example, you can try our finetuned BLOOMZ-b71-mt-chatdoctor-200k (`LinhDuong/doctorwithbloom`) model out on Colab [here](https://colab.research.google.com/drive/1LY5Ds6qyr_Drpp9WSdt-ZEMvvrFICdEx#scrollTo=X_pz8MuY84Qh)!!!!!**
 
 We try to reimplement BLOOM-LoRA using a variety of sources such as [the original LLaMA](https://github.com/facebookresearch/llama), [Stanford-Alpaca](https://github.com/tatsu-lab/stanford_alpaca), [Alpaca-LoRA](https://github.com/tloen/alpaca-lora), [BLOOMZ](https://github.com/NouamaneTazi/bloomz.cpp), and a name to few. These datasets for finetuning tasks can be found at [the original source](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) or [my HuggingFace Hub](https://huggingface.co/LinhDuong).
 
