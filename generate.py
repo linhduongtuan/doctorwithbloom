@@ -5,7 +5,7 @@ import gradio as gr
 import torch
 import transformers
 from peft import PeftModel
-from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
+from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer, BloomForCausalLM, BloomTokenizerFast
 
 if torch.cuda.is_available():
     device = "cuda"
@@ -22,16 +22,16 @@ except:  # noqa: E722
 def main(
     load_8bit: bool = False,
     base_model: str = "",
-    lora_weights: str = "tloen/alpaca-lora-7b",
+    lora_weights: str = "LinhDuong/doctorwithbloom",
     share_gradio: bool = False,
 ):
     assert (
         base_model
     ), "Please specify a --base_model, e.g. --base_model='decapoda-research/llama-7b-hf'"
 
-    tokenizer = LlamaTokenizer.from_pretrained(base_model)
+    tokenizer = BloomTokenizerFast.from_pretrained(base_model)
     if device == "cuda":
-        model = LlamaForCausalLM.from_pretrained(
+        model = BloomForCausalLM.from_pretrained(
             base_model,
             load_in_8bit=load_8bit,
             torch_dtype=torch.float16,
@@ -43,7 +43,7 @@ def main(
             torch_dtype=torch.float16,
         )
     elif device == "mps":
-        model = LlamaForCausalLM.from_pretrained(
+        model = BloomForCausalLM.from_pretrained(
             base_model,
             device_map={"": device},
             torch_dtype=torch.float16,
@@ -55,7 +55,7 @@ def main(
             torch_dtype=torch.float16,
         )
     else:
-        model = LlamaForCausalLM.from_pretrained(
+        model = BloomForCausalLM.from_pretrained(
             base_model, device_map={"": device}, low_cpu_mem_usage=True
         )
         model = PeftModel.from_pretrained(
@@ -139,8 +139,8 @@ def main(
                 label="Output",
             )
         ],
-        title="🦙🌲 Alpaca-LoRA",
-        description="Alpaca-LoRA is a 7B-parameter LLaMA model finetuned to follow instructions. It is trained on the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) dataset and makes use of the Huggingface LLaMA implementation. For more information, please visit [the project's website](https://github.com/tloen/alpaca-lora).",  # noqa: E501
+        title="🌲 ChatDoctor-200k-LoRA",
+        description="ChatDoctor-200k-LoRA is a 7B-parameter Bloomz-7b1-200k model finetuned to follow instructions. It is trained on the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) dataset and makes use of the Huggingface LLaMA implementation. For more information, please visit [the project's website](https://github.com/tloen/alpaca-lora).",  # noqa: E501
     ).launch(share=share_gradio)
     # Old testing code follows.
 
