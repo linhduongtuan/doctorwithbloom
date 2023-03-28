@@ -27,7 +27,7 @@ def main(
 ):
     assert (
         base_model
-    ), "Please specify a --base_model, e.g. --base_model='decapoda-research/llama-7b-hf'"
+    ), "Please specify a --base_model, e.g. --base_model='bigscience/bloomz-7b1-mt'"
 
     tokenizer = BloomTokenizerFast.from_pretrained(base_model)
     if device == "cuda":
