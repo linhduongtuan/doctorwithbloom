@@ -71,7 +71,7 @@ def train(
     )
     assert (
         base_model
-    ), "Please specify a --base_model, e.g. --base_model='LinhDuong/doctorwithbloom'"
+    ), "Please specify a --base_model, e.g. --base_model='bigscience/bloomz-7b1-mt'"
     gradient_accumulation_steps = batch_size // micro_batch_size
 
     device_map = "auto"
