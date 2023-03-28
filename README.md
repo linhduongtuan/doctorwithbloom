@@ -1,14 +1,14 @@
 ![alt text](https://huggingface.co/blog/assets/86_bloom_megatron_deepspeed/bloom-banner.png)
 ## 🌲🤏 BLOOM-LoRA: Low-Rank Adaptation for InstructorDoctor-200Kd ataset.
 
-**We try to reimplement BLOOM-LoRA (much less restricted BLOOM license here https://huggingface.co/spaces/bigscience/license) using Chatdoctor-LoRA with this [**InstructorDoctor-200k dataset**](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) following a paper, namely [**ChatDoctor: A Medical Chat Model Fine-tuned on LLaMA Model using Medical Domain Knowledge**](https://arxiv.org/pdf/2303.14070.pdf)**
+**We try to reimplement BLOOM-LoRA (much less restricted BLOOM license here https://huggingface.co/spaces/bigscience/license) using Chatdoctor-LoRA with this [**InstructorDoctor-200k dataset**](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) or this [**InstructorDoctor-5k dataset**](https://drive.google.com/file/d/1nDTKZ3wZbZWTkFMBkxlamrzbNz0frugg/view?usp=sharing) following a paper, namely [**ChatDoctor: A Medical Chat Model Fine-tuned on LLaMA Model using Medical Domain Knowledge**](https://arxiv.org/pdf/2303.14070.pdf)**
 
 **Why do we try to finetune these BLOOM models? Because the BLOOM licence seems to be more relax with [The BigScience RAIL License](https://bigscience.huggingface.co/blog/the-bigscience-rail-license)! Moreover, BLOOM models were trained on the dataset having [59 Languages (46 natural and 13 programing languages](https://huggingface.co/bigscience/bloom) including [2.7% Vietnamese (7^th in total 46 natural languages)](https://huggingface.co/bigscience/bloom)**
 
 We try to reimplemt BLOOM-LoRA using a variety of sources such as [the original LLaMA](https://github.com/facebookresearch/llama), [Stanford-Alpaca](https://github.com/tatsu-lab/stanford_alpaca), [Alpaca-LoRA](https://github.com/tloen/alpaca-lora), [BLOOMZ](https://github.com/NouamaneTazi/bloomz.cpp), and a name to few. These datasets for finetuning tasks can be found at [the original source](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) or [my HuggingFace Hub](https://huggingface.co/LinhDuong).
 
-In addition to the training code, which runs on a single RTX 4090 takes a week or runs on 8 GPUs A100 takes around 8 hours,
-we publish a script for downloading and inference on the foundation model and LoRA,
+In addition to the training code, which runs on a single RTX 4090 takes a week or runs on 8 GPUs A100 takes around 8 hours using the InstructorDoctor-200k dataset. On the other hand, you can use the InstructorDoctor-5k dataset and run on a single RTX 3090/4090, it takes overnight.
+We now publish a script for downloading and inference on the foundation model and LoRA,
 as well as the resulting [LoRA weights themselves](https://huggingface.co/LinhDuong/doctorwithbloom/tree/main).
 To fine-tune cheaply and efficiently, we use Hugging Face's [PEFT](https://github.com/huggingface/peft)
 as well as Tim Dettmers' [bitsandbytes](https://github.com/TimDettmers/bitsandbytes).
