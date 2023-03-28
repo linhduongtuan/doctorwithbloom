@@ -3,38 +3,94 @@ import os
 from transformers import AutoTokenizer, BloomForCausalLM
 import transformers
 import torch
-
+from peft import PeftModel
 
 model = None
 tokenizer = None
 generator = None
 os.environ["CUDA_VISIBLE_DEVICES"]="1"
 
+if torch.cuda.is_available():
+    device = "cuda"
+else:
+    device = "cpu"
+
+try:
+    if torch.backends.mps.is_available():
+        device = "mps"
+except:
+    pass
+
 def load_model(model_name, eight_bit=0, device_map="auto"):
     global model, tokenizer, generator
 
     print("Loading "+model_name+"...")
 
-    if device_map == "zero":
-        device_map = "balanced_low_0"
-
+    #if device_map == "zero":
+    #    device_map = "balanced_low_0"
+    
     # config
-    gpu_count = torch.cuda.device_count()
-    print('gpu_count', gpu_count)
+    #gpu_count = torch.cuda.device_count()
+    #print('gpu_count', gpu_count)
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = BloomForCausalLM.from_pretrained(
-        model_name,
-        #device_map=device_map,
-        #device_map="auto",
-        torch_dtype=torch.float16,
-        #max_memory = {0: "14GB", 1: "14GB", 2: "14GB", 3: "14GB",4: "14GB",5: "14GB",6: "14GB",7: "14GB"},
-        #load_in_8bit=eight_bit,
-        #from_tf=True,
-        low_cpu_mem_usage=True,
-        load_in_8bit=False,
-        cache_dir="cache"
-    ).cuda()
+    if device == "cuda":
+        model = BloomForCausalLM.from_pretrained(
+            'bigscience/bloomz-7b1-mt,
+             #device_map=device_map,
+             device_map="auto",
+             torch_dtype=torch.float16,
+             low_cpu_mem_usage=True,
+             load_in_8bit=True,
+             cache_dir="cache"    
+             )#.cuda()
+    
+        model = PeftModel.from_pretrained(
+             model, 
+            "LinhDuong/doctorwithbloom",
+            torch_dtype=torch.float16,
+            #device_map={'':0},
+            device_map={"": device},
+        )
+        
+     elif device == "mps":
+        model = BloomForCausalLM.from_pretrained(
+            'bigscience/bloomz-7b1-mt,
+             #device_map=device_map,
+             #device_map="auto",
+             device_map={"": device},
+             torch_dtype=torch.float16,
+             low_cpu_mem_usage=True,
+             load_in_8bit=True,
+             cache_dir="cache"    
+             )
+    
+        model = PeftModel.from_pretrained(
+             model, 
+            "LinhDuong/doctorwithbloom",
+            torch_dtype=torch.float16,
+            #device_map={'':0},
+            device_map={"": device},
+        )
+        
+      else:
+        model = BloomForCausalLM.from_pretrained(
+            'bigscience/bloomz-7b1-mt,
+             #device_map=device_map,
+             #device_map="auto",
+             device_map={"": device},
+             torch_dtype=torch.float16,
+             low_cpu_mem_usage=True,
+             load_in_8bit=True,
+             cache_dir="cache"    
+             )
+    
+        model = PeftModel.from_pretrained(
+             model, 
+            "LinhDuong/doctorwithbloom",
+            torch_dtype=torch.float16,
+            device_map={"": device},
+        )
 
     generator = model.generate
 
