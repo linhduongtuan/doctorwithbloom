@@ -154,7 +154,7 @@ The first step in building a physician-patient conversation dataset is to collec
 We emphasize that ChatDoctor is for academic research only and any commercial use and clinical use is prohibited. There are three factors in this decision: First, ChatDoctor is based on LLaMA and has a non-commercial license, so we necessarily inherited this decision. Second, our model is not licensed for healthcare-related purposes. Also, we have not designed sufficient security measures, and the current model still does not guarantee the full correctness of medical diagnoses.
 
 
-# Acknowlegement:
+# Acknowledgment:
 ### I would like to express my gratitude to [Phenikaa University](https://phenikaa-uni.edu.vn/en) and [Phenikaa-X](https://phenikaa-x.com/) company, without whose support, this fine-tuned model would not have been possible. Their generosity in providing me with access to their computation resources, namely A100 and RTX 4090, allowed me to train and test my work successfully. 
 ### I would also like to extend my thanks to [Pham Ngoc Ninh](https://github.com/phamngocninh), who worked diligently to address any bugs and refine this model. Ninh's assistance was greatly appreciated.
 
