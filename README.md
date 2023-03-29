@@ -5,7 +5,7 @@
 
 **Why do we try to finetune these BLOOM models? Because the BLOOM licence seems to be more relax with [The BigScience RAIL License](https://bigscience.huggingface.co/blog/the-bigscience-rail-license)! Moreover, BLOOM models were trained on the dataset having [59 Languages (46 natural and 13 programing languages](https://huggingface.co/bigscience/bloom) including [2.7% Vietnamese (7^th in total 46 natural languages)](https://huggingface.co/bigscience/bloom)**
 
-**For example, you can try our finetuned BLOOMZ-b71-mt-chatdoctor-200k (`LinhDuong/doctorwithbloom`) model out on Colab [here](https://colab.research.google.com/drive/1bL8iT6dGFqxfYkpDGW9nhCdv_mlTy2bc#scrollTo=_Kwo202B3Ode)!!!!!**
+**For example, you can try our finetuned BLOOMZ-b71-mt-chatdoctor-200k (`LinhDuong/doctorwithbloom`) model out on Colab (coming soon)!**
 
 We try to reimplement BLOOM-LoRA using a variety of sources such as [the original LLaMA](https://github.com/facebookresearch/llama), [Stanford-Alpaca](https://github.com/tatsu-lab/stanford_alpaca), [Alpaca-LoRA](https://github.com/tloen/alpaca-lora), [BLOOMZ](https://github.com/NouamaneTazi/bloomz.cpp), and a name to few. These datasets for finetuning tasks can be found at [the original source](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) or [my HuggingFace Hub](https://huggingface.co/LinhDuong).
 
@@ -162,7 +162,8 @@ We emphasize that ChatDoctor is for academic research only and any commercial us
 abdominal pain. I recently found out that I have pyloric
 stenosis. What medications should I take for it?
 
-**Response of DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
+
 
 **Response of ChatDoctor**: The most common treatment for pyloric stenosis is a surgical procedure called a pyloromyotomy. This involves
 cutting and sealing the muscle around the opening of the
@@ -184,7 +185,8 @@ The treatment for pyloric stenosis typically involves surgical intervention, in 
 few months. I think I might have Alopecia. What should
 I do?
 
-**Response of DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system.
+
 
 **Response of ChatDoctor**: There are several medications that can help with Alopecia. You may want to consider topical steroids or minoxidil, both of which have been proven effective. Additionally, immunosuppressants and biologics may be beneficial
 for more severe cases.
@@ -206,7 +208,8 @@ It is essential to address hair loss promptly, as some types of hair loss can be
 in my muscles. It’s becoming very difficult to manage
 them on a daily basis.
 
-**Response of DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor, The symptoms you have mentioned are suggestive of muscle spasm. This can be due to many reasons like stress, anxiety, lack of sleep etc. I would suggest you to consult a physiotherapist and get evaluated. Physiotherapy like ultrasound and TENS therapy will be helpful in relieving the symptoms. Hope this will help you. Take care!
+
 
 **Response of ChatDoctor**: There are several medications that can help with Myoclonus. Are you taking any other medications?
 
@@ -251,7 +254,8 @@ In the meantime, you can try to manage your muscle jerks and twitches by practic
 **Question of Patient**: I think I have carbon monoxide poisoning. I feel dizzy
 and nauseous
 
-**Response of DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concern. Carbon monoxide is a colorless, odorless gas that is produced by incomplete combustion of organic materials such as wood, gasoline, and kerosene. The symptoms of carbon monoxide poisoning include nausea, vomiting, headache, dizziness, weakness, and confusion. If you have any of these symptoms, you should seek immediate medical attention. Hope I have answered your query. Let me know if I can assist you further!
+
 
 **Response of ChatDoctor**: I recommend that you get medical attention immediately
 and start taking a breathing treatment with 100% oxygen. You should also receive an injection of the drug "Diamox" which helps to reduce the symptoms of Carbon
@@ -277,7 +281,8 @@ If you suspect you have been exposed to carbon monoxide, it is important to take
 **Question of Patient**: I have been experiencing memory problems and confusion
 lately. I think I might have Wernicke Korsakoff syndrome.
 
-**Response of DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concerns. Wernicke Korsakoff syn Chat Doctor!
+
 
 **Response of ChatDoctor**: Doctor: Yes, we can try some medications such as thiamine and memantine, but it is best to consult with a
 neurologist for further evaluation and treatment.
