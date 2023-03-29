@@ -36,7 +36,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     if device == "cuda":
         model = BloomForCausalLM.from_pretrained(
-            'bigscience/bloomz-7b1-mt,
+            'bigscience/bloomz-7b1-mt',
              #device_map=device_map,
              device_map="auto",
              torch_dtype=torch.float16,
@@ -55,7 +55,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
         
      elif device == "mps":
         model = BloomForCausalLM.from_pretrained(
-            'bigscience/bloomz-7b1-mt,
+            'bigscience/bloomz-7b1-mt',
              #device_map=device_map,
              #device_map="auto",
              device_map={"": device},
@@ -75,7 +75,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
         
       else:
         model = BloomForCausalLM.from_pretrained(
-            'bigscience/bloomz-7b1-mt,
+            'bigscience/bloomz-7b1-mt',
              #device_map=device_map,
              #device_map="auto",
              device_map={"": device},
@@ -94,7 +94,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
 
     generator = model.generate
 
-load_model("./pretrained/")
+load_model("/home/linh/Downloads/bloom-alpaca-doctor")
 
 First_chat = "ChatDoctor: I am ChatDoctor, what medical questions do you have?"
 print(First_chat)
