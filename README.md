@@ -257,7 +257,7 @@ and nauseous
 and start taking a breathing treatment with 100% oxygen. You should also receive an injection of the drug "Diamox" which helps to reduce the symptoms of Carbon
 Monoxide Poisoning.
 
-**Response of BLOOM-7b1-LoRA-Alpaca**: I think I have carbon monoxide poisoning. I feel dizzy and nauseous, and my breathing is labored. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry.
+**Response of BLOOM-7b1-LoRA-Alpaca**: I think I have carbon monoxide poisoning. I feel dizzy and nauseous, and my breathing is labored. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. 
 
 **Response of ChatGPT (free version dated March 25^th 2023)**: If you suspect you have carbon monoxide poisoning, it is essential to seek medical attention immediately.
 
