@@ -172,7 +172,10 @@ that can help reduce the symptoms such as metoclopramide or cisapride. Which one
 
 **Response of BLOOM-7b1-LoRA-Alpaca**: Pyloric stenosis is a condition in which the pylorus, the narrow passageway between the stomach and the small intestine, is too narrow to allow food to pass smoothly. This can lead to vomiting, nausea, and abdominal pain. Treatment for pyloric stenosis depends on the severity of the condition. If the condition is mild, medications such as antacids, H2 blockers, and proton pump inhibitors can be used to treat the symptoms. If the condition is more severe, surgery may be required to open up the passageway. In some cases, the passageway may need to be surgically enlarged to allow food to pass more easily. Pyloric stenosis is a rare condition, but it is important to seek medical attention if you are experiencing any of the symptoms associated with it. 
 
-**Response of ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**: As an AI language model, I cannot diagnose or prescribe medications. However, pyloric stenosis is a medical condition that occurs when the muscle in the lower part of the stomach (the pylorus) becomes thickened, leading to a narrowing of the opening between the stomach and the small intestine. This narrowing can result in symptoms such as vomiting, nausea, and abdominal pain.
+
+The treatment for pyloric stenosis typically involves surgical intervention, in which the thickened muscle is surgically corrected. If you have been diagnosed with pyloric stenosis, you should discuss the appropriate treatment options with your doctor. They will be able to provide you with information about the risks and benefits of surgical intervention, as well as any medication that may be prescribed to manage your symptoms before or after surgery.
+
 
 ---
 
@@ -188,7 +191,13 @@ for more severe cases.
 
 **Response of BLOOM-7b1-LoRA-Alpaca**: Alopecia is a condition that causes hair loss. It can be caused by a variety of factors, such as genetics, stress, medications, and certain diseases. The most common types of alopecia are androgenic alopecia (male pattern baldness), telogen effluvium (female pattern baldness), and trichotillomania (hair pulling). Alopecia can be treated with a variety of medications, such as minoxidil, finasteride, and triamcinolone, as well as surgical procedures, such as follicular unit transplantation (FUT) and follicular unit extraction (FUE). It is important to consult with a doctor to determine the cause of your hair loss and to determine the best course of treatment for you. In addition, it is important to maintain a healthy lifestyle, such as eating a balanced diet and getting plenty of sleep, to help prevent further hair loss. Finally, it is important to remember that alopecia is not a sign of weakness, but rather a sign of strength. It is a sign that you are taking care of yourself and that you are taking action to improve your health and well-being. By doing so, you will be able to prevent further hair loss and
 
-**Response of ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**: Hair loss can be caused by many different factors, including genetics, hormonal changes, medical conditions, medications, and lifestyle factors. Alopecia is a medical condition that causes hair loss and can occur in different forms. Therefore, I recommend that you see a dermatologist or a healthcare provider who specializes in hair loss to get an accurate diagnosis and the right treatment.
+
+During the appointment, the healthcare provider will ask you questions about your medical history, medications you are taking, and any recent changes in your health. They may also perform a physical exam of your scalp and hair to evaluate the pattern of hair loss and the condition of your scalp.
+
+Based on your diagnosis, your healthcare provider may recommend different treatments, such as topical medications, oral medications, or injections. In some cases, they may recommend hair transplantation surgery. They may also suggest lifestyle changes or counseling to help you manage stress or emotional factors that may be contributing to your hair loss.
+
+It is essential to address hair loss promptly, as some types of hair loss can be irreversible if left untreated. The sooner you seek treatment, the better your chances of regaining your hair.
 
 ---
 
@@ -225,7 +234,15 @@ them on a daily basis.
 
 11. Muscle twitch
 
-**Response of ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**: Muscle jerks and twitches can have many different causes, ranging from benign conditions like muscle fatigue or dehydration to more serious medical conditions like neurological disorders or autoimmune diseases. Therefore, I would recommend that you see a doctor for a proper evaluation and diagnosis.
+
+During the appointment, your doctor will likely ask you questions about your medical history, medications you are taking, and any recent changes in your health. They may also perform a physical exam and order tests such as blood work or imaging studies to evaluate your condition.
+
+Based on your diagnosis, your doctor may recommend different treatments. For benign causes, such as muscle fatigue or dehydration, your doctor may recommend lifestyle changes like getting enough rest, staying hydrated, and eating a balanced diet.
+
+For more serious causes, such as neurological disorders, your doctor may refer you to a specialist or recommend medications or therapies to manage your symptoms. It's essential to follow your doctor's recommendations and attend any follow-up appointments as needed to monitor your condition.
+
+In the meantime, you can try to manage your muscle jerks and twitches by practicing relaxation techniques, getting enough sleep, and avoiding triggers such as stress or caffeine. If your symptoms are severe or affecting your daily life, you should seek medical attention right away.
 
 ---
 
@@ -242,7 +259,17 @@ Monoxide Poisoning.
 
 **Response of BLOOM-7b1-LoRA-Alpaca**: I think I have carbon monoxide poisoning. I feel dizzy and nauseous, and my breathing is labored. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry.
 
-**Response of ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**: If you suspect you have carbon monoxide poisoning, it is essential to seek medical attention immediately.
+
+Carbon monoxide is a toxic gas that can be produced by faulty appliances, such as gas stoves, furnaces, or generators. It can cause symptoms like dizziness, nausea, headaches, and fatigue. In severe cases, it can lead to loss of consciousness and even death.
+
+If you are experiencing symptoms of carbon monoxide poisoning, the first thing to do is to get to fresh air immediately. Open windows and doors and turn off any potential sources of carbon monoxide, such as gas stoves or generators.
+
+Next, call your local emergency services or seek medical attention right away. They will be able to evaluate your condition, provide oxygen therapy to help you breathe, and monitor you for any signs of complications.
+
+It is crucial to address carbon monoxide poisoning promptly, as the longer you are exposed to it, the more severe your symptoms can become. In some cases, it can cause permanent damage to the brain and other organs.
+
+If you suspect you have been exposed to carbon monoxide, it is important to take steps to prevent it from happening again. Have your appliances checked regularly, install carbon monoxide detectors in your home, and avoid using gas-powered equipment in enclosed spaces.
 
 ---
 
@@ -257,7 +284,15 @@ neurologist for further evaluation and treatment.
 
 **Response of BLOOM-7b1-LoRA-Alpaca**: Wernicke Korsakoff syndrome (WKS) is a type of neurological disorder that is characterized by memory loss, confusion, and disorientation. It is caused by damage to the brain caused by alcohol abuse or malnutrition. Symptoms of WKS include difficulty remembering new information, difficulty recalling old information, confusion, and disorientation. WKS can be caused by a variety of factors, such as alcohol abuse, malnutrition, or brain injury. It can also be a side effect of certain medications, such as antidepressants and antipsychotics. WKS can be treated with a combination of medications and behavioral therapy. If left untreated, WKS can lead to more serious problems, such as dementia and Alzheimer's disease. It is important to seek medical attention if you are experiencing memory problems and confusion, as it could be a sign of WKS.</s>
 
-**Response of ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**: If you are experiencing memory problems and confusion, it is essential to see a doctor for a proper evaluation and diagnosis. While Wernicke-Korsakoff syndrome is a possible cause of these symptoms, other medical conditions can also cause similar symptoms.
+
+Wernicke-Korsakoff syndrome is a neurological disorder that can occur due to a deficiency of thiamine, a vitamin essential for brain function. It is commonly associated with alcohol abuse, but it can also occur due to malnutrition, gastrointestinal disorders, or other underlying medical conditions.
+
+If you have Wernicke-Korsakoff syndrome, early diagnosis and treatment are crucial to prevent further neurological damage. Treatment typically involves intravenous thiamine to correct the deficiency, followed by a high-dose oral thiamine regimen.
+
+In addition to treatment, lifestyle changes may be recommended to prevent further damage, such as avoiding alcohol and maintaining a healthy diet.
+
+It is important to seek medical attention promptly if you are experiencing memory problems and confusion, as prompt treatment can improve your chances of recovery. Your doctor may perform a physical exam, blood tests, imaging studies, or other tests to evaluate your condition and determine the appropriate treatment plan.
 
 ---
 
