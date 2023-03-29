@@ -5,11 +5,13 @@
 
 **Why do we try to finetune these BLOOM models? Because the BLOOM licence seems to be more relax with [The BigScience RAIL License](https://bigscience.huggingface.co/blog/the-bigscience-rail-license)! Moreover, BLOOM models were trained on the dataset having [59 Languages (46 natural and 13 programing languages](https://huggingface.co/bigscience/bloom) including [2.7% Vietnamese (7^th in total 46 natural languages)](https://huggingface.co/bigscience/bloom)**
 
-**For example, you can try our finetuned BLOOMZ-b71-mt-chatdoctor-200k (`LinhDuong/doctorwithbloom`) model out on Colab (coming soon)!**
+**For example, you can try our finetuned BLOOMZ-b71-mt-chatdoctor-200k (`LinhDuong/doctorwithbloom`) model out on A100 , Colab (coming soon)!**
+
+**The trained model is provided by [Phenikaa-X](https://phenikaa-x.com/) company and made by [Pham Ngoc Ninh](https://github.com/phamngocninh) - AI engineer of Phenikaa-X**
 
 We try to reimplement BLOOM-LoRA using a variety of sources such as [the original LLaMA](https://github.com/facebookresearch/llama), [Stanford-Alpaca](https://github.com/tatsu-lab/stanford_alpaca), [Alpaca-LoRA](https://github.com/tloen/alpaca-lora), [BLOOMZ](https://github.com/NouamaneTazi/bloomz.cpp), and a name to few. These datasets for finetuning tasks can be found at [the original source](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) or [my HuggingFace Hub](https://huggingface.co/LinhDuong).
 
-In addition to the training code, which runs on a single RTX 4090 takes a week or runs on 8 GPUs A100 takes around 8 hours using the InstructorDoctor-200k dataset. On the other hand, you can use the InstructorDoctor-5k dataset and run on a single RTX 3090/4090, it takes overnight.
+In addition to the training code, which runs on a single RTX 4090 takes a week or runs on 8 GPUs A100( A100 is provided by takes around 8 hours using the InstructorDoctor-200k dataset. On the other hand, you can use the InstructorDoctor-5k dataset and run on a single RTX 3090/4090, it takes overnight.
 We now publish a script for downloading and inference on the foundation model and LoRA,
 as well as the resulting [LoRA weights themselves](https://huggingface.co/LinhDuong/doctorwithbloom/tree/main).
 To fine-tune cheaply and efficiently, we use Hugging Face's [PEFT](https://github.com/huggingface/peft)
