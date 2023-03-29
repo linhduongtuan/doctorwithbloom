@@ -164,9 +164,13 @@ stenosis. What medications should I take for it?
 
 **Response of DOCTORWITHBLOOM**: 
 
-**Response of ChatDoctor**:
+**Response of ChatDoctor**: The most common treatment for pyloric stenosis is a surgical procedure called a pyloromyotomy. This involves
+cutting and sealing the muscle around the opening of the
+pylorus, which widens it and allows food to pass through
+more easily. However, there are also some medications
+that can help reduce the symptoms such as metoclopramide or cisapride. Which one would you prefer?
 
-**Response of BLOOM-7b1**: 
+**Response of BLOOM-7b1-LoRA-Alpaca**: Pyloric stenosis is a condition in which the pylorus, the narrow passageway between the stomach and the small intestine, is too narrow to allow food to pass smoothly. This can lead to vomiting, nausea, and abdominal pain. Treatment for pyloric stenosis depends on the severity of the condition. If the condition is mild, medications such as antacids, H2 blockers, and proton pump inhibitors can be used to treat the symptoms. If the condition is more severe, surgery may be required to open up the passageway. In some cases, the passageway may need to be surgically enlarged to allow food to pass more easily. Pyloric stenosis is a rare condition, but it is important to seek medical attention if you are experiencing any of the symptoms associated with it. 
 
 **Response of ChatGPT (free version dated March 25^th 2023)**:
 
@@ -182,7 +186,7 @@ I do?
 **Response of ChatDoctor**: There are several medications that can help with Alopecia. You may want to consider topical steroids or minoxidil, both of which have been proven effective. Additionally, immunosuppressants and biologics may be beneficial
 for more severe cases.
 
-**Response of BLOOM-7b1**: 
+**Response of BLOOM-7b1-LoRA-Alpaca**: Alopecia is a condition that causes hair loss. It can be caused by a variety of factors, such as genetics, stress, medications, and certain diseases. The most common types of alopecia are androgenic alopecia (male pattern baldness), telogen effluvium (female pattern baldness), and trichotillomania (hair pulling). Alopecia can be treated with a variety of medications, such as minoxidil, finasteride, and triamcinolone, as well as surgical procedures, such as follicular unit transplantation (FUT) and follicular unit extraction (FUE). It is important to consult with a doctor to determine the cause of your hair loss and to determine the best course of treatment for you. In addition, it is important to maintain a healthy lifestyle, such as eating a balanced diet and getting plenty of sleep, to help prevent further hair loss. Finally, it is important to remember that alopecia is not a sign of weakness, but rather a sign of strength. It is a sign that you are taking care of yourself and that you are taking action to improve your health and well-being. By doing so, you will be able to prevent further hair loss and
 
 **Response of ChatGPT (free version dated March 25^th 2023)**:
 
@@ -197,7 +201,29 @@ them on a daily basis.
 
 **Response of ChatDoctor**: There are several medications that can help with Myoclonus. Are you taking any other medications?
 
-**Response of BLOOM-7b1**: 
+**Response of BLOOM-7b1-LoRA-Alpaca**: Sudden jerks and twitches in your muscles can be caused by a variety of conditions, including:
+
+1. Muscular dystrophy: Muscular dystrophy is a genetic disease that causes progressive muscle weakness and wasting.
+
+2. Fibromyalgia: Fibromyalgia is a chronic condition characterized by widespread pain and fatigue.
+
+3. Muscle spasm: Muscle spasm is a sudden, involuntary contraction of a muscle.
+
+4. Stress: Stress can cause sudden jerks and twitches in your muscles.
+
+5. Muscle cramps: Muscle cramps are sudden, involuntary contractions of a muscle.
+
+6. Muscle strain: Muscle strain is a type of muscle injury that occurs when a muscle is overworked.
+
+7. Muscle twitch: Muscle twitch is a sudden, involuntary contraction of a muscle.
+
+8. Muscle spasm: Muscle spasm is a sudden, involuntary contraction of a muscle.
+
+9. Muscle cramps: Muscle cramps are sudden, involuntary contractions of a muscle.
+
+10. Muscle strain: Muscle strain is a type of muscle injury that occurs when a muscle is overworked.
+
+11. Muscle twitch
 
 **Response of ChatGPT (free version dated March 25^th 2023)**:
 
@@ -214,7 +240,7 @@ and nauseous
 and start taking a breathing treatment with 100% oxygen. You should also receive an injection of the drug "Diamox" which helps to reduce the symptoms of Carbon
 Monoxide Poisoning.
 
-**Response of BLOOM-7b1**: 
+**Response of BLOOM-7b1-LoRA-Alpaca**: I think I have carbon monoxide poisoning. I feel dizzy and nauseous, and my breathing is labored. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry. My skin feels cold and clammy. I have a burning sensation in my throat and my chest feels tight. I have a headache and my vision is blurry.
 
 **Response of ChatGPT (free version dated March 25^th 2023)**:
 
@@ -229,7 +255,7 @@ lately. I think I might have Wernicke Korsakoff syndrome.
 **Response of ChatDoctor**: Doctor: Yes, we can try some medications such as thiamine and memantine, but it is best to consult with a
 neurologist for further evaluation and treatment.
 
-**Response of BLOOM-7b1**: 
+**Response of BLOOM-7b1-LoRA-Alpaca**: Wernicke Korsakoff syndrome (WKS) is a type of neurological disorder that is characterized by memory loss, confusion, and disorientation. It is caused by damage to the brain caused by alcohol abuse or malnutrition. Symptoms of WKS include difficulty remembering new information, difficulty recalling old information, confusion, and disorientation. WKS can be caused by a variety of factors, such as alcohol abuse, malnutrition, or brain injury. It can also be a side effect of certain medications, such as antidepressants and antipsychotics. WKS can be treated with a combination of medications and behavioral therapy. If left untreated, WKS can lead to more serious problems, such as dementia and Alzheimer's disease. It is important to seek medical attention if you are experiencing memory problems and confusion, as it could be a sign of WKS.</s>
 
 **Response of ChatGPT (free version dated March 25^th 2023)**:
 
