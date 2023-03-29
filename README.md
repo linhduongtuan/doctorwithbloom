@@ -158,96 +158,82 @@ We emphasize that ChatDoctor is for academic research only and any commercial us
 
 ### Example outputs
 
-**Instruction**: 
+**Question of Patient**: Doctor, I have been experiencing vomiting, nausea, and
+abdominal pain. I recently found out that I have pyloric
+stenosis. What medications should I take for it?
 
-**DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: 
 
-**BLOOM-7b1**: 
+**Response of ChatDoctor**:
 
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of BLOOM-7b1**: 
 
----
-
-**Instruction**: 
-
-**DOCTORWITHBLOOM**: 
-
-**BLOOM-7b1**: 
-
-**ChatGPT (free version dated March 25^th 2023)**:
-
----
-
-**Instruction**: 
-
-**DOCTORWITHBLOOM**: 
-
-**BLOOM-7b1**: 
-
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**:
 
 ---
 
 
-**Instruction**: 
+**Question of Patient**: Hi doctor, I have been losing hair rapidly for the past
+few months. I think I might have Alopecia. What should
+I do?
 
-**DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: 
 
-**BLOOM-7b1**: 
+**Response of ChatDoctor**: There are several medications that can help with Alopecia. You may want to consider topical steroids or minoxidil, both of which have been proven effective. Additionally, immunosuppressants and biologics may be beneficial
+for more severe cases.
 
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of BLOOM-7b1**: 
 
----
-
-
-**Instruction**: 
-
-**DOCTORWITHBLOOM**: 
-
-**BLOOM-7b1**: 
-
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**:
 
 ---
 
 
-**Instruction**: 
+**Question of Patient**: Doctor, I’ve been experiencing sudden jerks and twitches
+in my muscles. It’s becoming very difficult to manage
+them on a daily basis.
 
-**DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: 
 
-**BLOOM-7b1**: 
+**Response of ChatDoctor**: There are several medications that can help with Myoclonus. Are you taking any other medications?
 
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of BLOOM-7b1**: 
 
----
-
-
-**Instruction**: 
-
-**DOCTORWITHBLOOM**: 
-
-**BLOOM-7b1**: 
-
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatGPT (free version dated March 25^th 2023)**:
 
 ---
 
 
-**Instruction**: 
 
-**DOCTORWITHBLOOM**: 
+**Question of Patient**: I think I have carbon monoxide poisoning. I feel dizzy
+and nauseous
 
-**BLOOM-7b1**: 
+**Response of DOCTORWITHBLOOM**: 
 
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of ChatDoctor**: I recommend that you get medical attention immediately
+and start taking a breathing treatment with 100% oxygen. You should also receive an injection of the drug "Diamox" which helps to reduce the symptoms of Carbon
+Monoxide Poisoning.
+
+**Response of BLOOM-7b1**: 
+
+**Response of ChatGPT (free version dated March 25^th 2023)**:
 
 ---
 
 
-**Instruction**: 
+**Question of Patient**: I have been experiencing memory problems and confusion
+lately. I think I might have Wernicke Korsakoff syndrome.
 
-**DOCTORWITHBLOOM**: 
+**Response of DOCTORWITHBLOOM**: 
 
-**BLOOM-7b1**: 
+**Response of ChatDoctor**: Doctor: Yes, we can try some medications such as thiamine and memantine, but it is best to consult with a
+neurologist for further evaluation and treatment.
 
-**ChatGPT (free version dated March 25^th 2023)**:
+**Response of BLOOM-7b1**: 
+
+**Response of ChatGPT (free version dated March 25^th 2023)**:
+
+---
+
+
+
