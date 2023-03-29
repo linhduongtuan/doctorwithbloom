@@ -185,7 +185,7 @@ The treatment for pyloric stenosis typically involves surgical intervention, in 
 few months. I think I might have Alopecia. What should
 I do?
 
-**Response of DOCTORWITHBLOOM**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system. It is a disease of the immune system.
+**Response of DOCTORWITHBLOOM**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. 
 
 
 **Response of ChatDoctor**: There are several medications that can help with Alopecia. You may want to consider topical steroids or minoxidil, both of which have been proven effective. Additionally, immunosuppressants and biologics may be beneficial
