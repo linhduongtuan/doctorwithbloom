@@ -53,7 +53,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
             device_map={"": device},
         )
         
-     elif device == "mps":
+    elif device == "mps":
         model = BloomForCausalLM.from_pretrained(
             'bigscience/bloomz-7b1-mt',
              #device_map=device_map,
@@ -73,7 +73,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
             device_map={"": device},
         )
         
-      else:
+    else:
         model = BloomForCausalLM.from_pretrained(
             'bigscience/bloomz-7b1-mt',
              #device_map=device_map,
