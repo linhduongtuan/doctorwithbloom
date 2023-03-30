@@ -23,7 +23,6 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 </details>
 
 <details><summary>HOW TO SETUP?</summary>
-## Setup
 
 1. Install dependencies
 
@@ -46,7 +45,7 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 </details>
 
 <details><summary>HOW TO FINETUNE A MODEL?</summary>
-### Training (`finetune.py`)
+Training (`finetune.py`)
 
 This file contains a straightforward application of PEFT to the Bloomz-7b1 model,
 as well as some code related to prompt construction and tokenization.
@@ -107,7 +106,7 @@ torchrun --nproc_per_node=8 --master_port=1234
 
 
 <details><summary>HOW TO INFERENCE?</summary>
-### Inference (`generate.py`)
+Inference (`generate.py`)
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
 
@@ -129,7 +128,7 @@ python chat.py
 
 <details><summary>HOW TO EXPORT A FINETUNED WEIGHT?</summary>
 
-### Checkpoint export (`export_*_checkpoint.py`)
+Checkpoint export (`export_*_checkpoint.py`)
 
 These files contain scripts that merge the LoRA weights back into the base model
 for export to Hugging Face format and to PyTorch `state_dicts`.
@@ -141,7 +140,6 @@ or [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp).
 
 <details><summary>NOTES</summary>
 
-### Notes
 
 - We can likely improve our model performance significantly if we had a better dataset. Consider supporting the [LAION Open Assistant](https://open-assistant.io/) effort to produce a high-quality dataset for supervised fine-tuning (or bugging them to release their data).
 - We're continually fixing bugs and conducting training runs, and the weights on the Hugging Face Hub are being updated accordingly. In particular, those facing issues with response lengths should make sure that they have the latest version of the weights and code.
@@ -174,14 +172,14 @@ We emphasize that ChatDoctor is for academic research only and any commercial us
 </details>
 
 <details><summary>ACKNOWLEDGMENT</summary>
-# Acknowledgment:
-### I would like to express my gratitude to [Phenikaa University](https://phenikaa-uni.edu.vn/en) and [Phenikaa-X](https://phenikaa-x.com/) company, without whose support, this fine-tuned model would not have been possible. Their generosity in providing me with access to their computation resources, namely A100 and RTX 4090, allowed me to train and test my work successfully. 
-### I would also like to extend my thanks to [Pham Ngoc Ninh](https://github.com/phamngocninh), who worked diligently to address any bugs and refine this model. Ninh's assistance was greatly appreciated.
+
+I would like to express my gratitude to [Phenikaa University](https://phenikaa-uni.edu.vn/en) and [Phenikaa-X](https://phenikaa-x.com/) company, without whose support, this fine-tuned model would not have been possible. Their generosity in providing me with access to their computation resources, namely A100 and RTX 4090, allowed me to train and test my work successfully. 
+
+I would also like to extend my thanks to [Pham Ngoc Ninh](https://github.com/phamngocninh), who worked diligently to address any bugs and refine this model. Ninh's assistance was greatly appreciated.
 </details>
 
 <details><summary>EXAMPLE OUTPUTS</summary>
 
-### Example outputs
 
 **QUESTION OF PATIENTS**: Doctor, I have been experiencing vomiting, nausea, and
 abdominal pain. I recently found out that I have pyloric
