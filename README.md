@@ -1,6 +1,8 @@
 ![alt text](https://huggingface.co/blog/assets/86_bloom_megatron_deepspeed/bloom-banner.png)
 ## 🌲🤏 BLOOM-LoRA: Low-Rank Adaptation for InstructorDoctor-200Kd ataset.
 
+<details><summary>REASONS WHY?</summary>
+
 **We try to reimplement BLOOM-LoRA (much less restricted BLOOM license here https://huggingface.co/spaces/bigscience/license) using Chatdoctor-LoRA with this [**InstructorDoctor-200k dataset**](https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing) "MedDialog: a large-scale medical dialogue dataset" or this [**InstructorDoctor-5k dataset**](https://drive.google.com/file/d/1nDTKZ3wZbZWTkFMBkxlamrzbNz0frugg/view?usp=sharing) following a paper, namely [**ChatDoctor: A Medical Chat Model Fine-tuned on LLaMA Model using Medical Domain Knowledge**](https://arxiv.org/pdf/2303.14070.pdf)**
 
 **Why do we try to finetune these BLOOM models? Because the BLOOM licence seems to be more relax with [The BigScience RAIL License](https://bigscience.huggingface.co/blog/the-bigscience-rail-license)! Moreover, BLOOM models were trained on the dataset having [59 Languages (46 natural and 13 programing languages](https://huggingface.co/bigscience/bloom) including [2.7% Vietnamese (7^th in total 46 natural languages)](https://huggingface.co/bigscience/bloom)**
@@ -18,6 +20,9 @@ as well as Tim Dettmers' [bitsandbytes](https://github.com/TimDettmers/bitsandby
 
 Without hyperparameter tuning, the LoRA model produces outputs comparable to the Stanford Alpaca model. (Please see the outputs included below.) Further tuning might be able to achieve better performance; I invite interested users to give it a try and report their results.
 
+</details>
+
+<details><summary>HOW TO SETUP?</summary>
 ## Setup
 
 1. Install dependencies
@@ -38,7 +43,9 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
     Both `finetune.py` and `generate.py` use `--base_model` flag as shown further below.
 
 1. If bitsandbytes doesn't work, [install it from source.](https://github.com/TimDettmers/bitsandbytes/blob/main/compile_from_source.md) Windows users can follow [these instructions](https://github.com/tloen/alpaca-lora/issues/17).
+</details>
 
+<details><summary>HOW TO FINETUNE A MODEL?</summary>
 ### Training (`finetune.py`)
 
 This file contains a straightforward application of PEFT to the Bloomz-7b1 model,
@@ -96,7 +103,10 @@ torchrun --nproc_per_node=8 --master_port=1234
     --train_on_inputs \
     --group_by_length
 ```
+</details>
 
+
+<details><summary>HOW TO INFERENCE?</summary>
 ### Inference (`generate.py`)
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
@@ -115,6 +125,9 @@ python generate.py \
  ```python
 python chat.py
  ```
+</details>
+
+<details><summary>HOW TO EXPORT A FINETUNED WEIGHT?</summary>
 
 ### Checkpoint export (`export_*_checkpoint.py`)
 
@@ -124,13 +137,19 @@ They should help users
 who want to run inference in projects like [llama.cpp](https://github.com/ggerganov/llama.cpp)
 or [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp).
 
+</details>
+
+<details><summary>NOTES</summary>
+
 ### Notes
 
 - We can likely improve our model performance significantly if we had a better dataset. Consider supporting the [LAION Open Assistant](https://open-assistant.io/) effort to produce a high-quality dataset for supervised fine-tuning (or bugging them to release their data).
 - We're continually fixing bugs and conducting training runs, and the weights on the Hugging Face Hub are being updated accordingly. In particular, those facing issues with response lengths should make sure that they have the latest version of the weights and code.
 - Users with multiple GPUs should take a look [here](https://github.com/tloen/alpaca-lora/issues/8#issuecomment-1477490259).
+</details>
 
- 
+
+ <details><summary>ABSTRACT</summary>
  
  ## Introduction
 The development of instruction-following large language models (LLMs) such as ChatGPT has garnered significant attention due to their remarkable success in instruction understanding and human-like response generation.
@@ -149,25 +168,30 @@ The main contributions of our method are three-fold:
 The first step in building a physician-patient conversation dataset is to collect the disease database that serves as the gold standard. Therefore, they collected and organized a database of diseases, which contains about 700 diseases with their relative symptoms, medical tests, and recommended medications. To train high-quality conversation models on an academic budget, we input each message from the disease database separately as a prompt into the ChatGPT API to automatically generate instruction data. It is worth noting that their prompts to the ChatGPT API contain the gold standard of diseases and symptoms, and drugs, so our fine-tuned ChatDoctor is not only able to achieve ChatGPT's conversational fluency but also higher diagnostic accuracy compared to ChatGPT. They finally collected 5K doctor-patient conversation instructions and named it InstructorDoctor-5K.
 
 
-
 ## Limitations
 We emphasize that ChatDoctor is for academic research only and any commercial use and clinical use is prohibited. There are three factors in this decision: First, ChatDoctor is based on LLaMA and has a non-commercial license, so we necessarily inherited this decision. Second, our model is not licensed for healthcare-related purposes. Also, we have not designed sufficient security measures, and the current model still does not guarantee the full correctness of medical diagnoses.
 
+</details>
 
+<details><summary>ACKNOWLEDGMENT</summary>
 # Acknowledgment:
 ### I would like to express my gratitude to [Phenikaa University](https://phenikaa-uni.edu.vn/en) and [Phenikaa-X](https://phenikaa-x.com/) company, without whose support, this fine-tuned model would not have been possible. Their generosity in providing me with access to their computation resources, namely A100 and RTX 4090, allowed me to train and test my work successfully. 
 ### I would also like to extend my thanks to [Pham Ngoc Ninh](https://github.com/phamngocninh), who worked diligently to address any bugs and refine this model. Ninh's assistance was greatly appreciated.
+</details>
 
-
+<details><summary>EXAMPLE OUTPUTS</summary>
 
 ### Example outputs
 
-**Question of Patient**: Doctor, I have been experiencing vomiting, nausea, and
+**QUESTION OF PATIENTS**: Doctor, I have been experiencing vomiting, nausea, and
 abdominal pain. I recently found out that I have pyloric
 stenosis. What medications should I take for it?
 
-**Response of DOCTORWITHBLOOM**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
 
+
+**RESPONSE OF  DOCTORWITHBLOOM**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
+
+<details><summary>RESPONSE OF OTHER METHODS</summary>
 
 **Response of ChatDoctor**: The most common treatment for pyloric stenosis is a surgical procedure called a pyloromyotomy. This involves
 cutting and sealing the muscle around the opening of the
@@ -180,17 +204,18 @@ that can help reduce the symptoms such as metoclopramide or cisapride. Which one
 **Response of ChatGPT (free version dated March 25^th 2023)**: As an AI language model, I cannot diagnose or prescribe medications. However, pyloric stenosis is a medical condition that occurs when the muscle in the lower part of the stomach (the pylorus) becomes thickened, leading to a narrowing of the opening between the stomach and the small intestine. This narrowing can result in symptoms such as vomiting, nausea, and abdominal pain.
 
 The treatment for pyloric stenosis typically involves surgical intervention, in which the thickened muscle is surgically corrected. If you have been diagnosed with pyloric stenosis, you should discuss the appropriate treatment options with your doctor. They will be able to provide you with information about the risks and benefits of surgical intervention, as well as any medication that may be prescribed to manage your symptoms before or after surgery.
-
+</details>
 
 ---
 
 
-**Question of Patient**: Hi doctor, I have been losing hair rapidly for the past
+**QUESTION OF PATIENTS**: Hi doctor, I have been losing hair rapidly for the past
 few months. I think I might have Alopecia. What should
 I do?
 
-**Response of DOCTORWITHBLOOM**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. 
+**RESPONSE OF DOCTORWITHBLOOM**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. 
 
+<details><summary>RESPONSE OF OTHER METHODS</summary>
 
 **Response of ChatDoctor**: There are several medications that can help with Alopecia. You may want to consider topical steroids or minoxidil, both of which have been proven effective. Additionally, immunosuppressants and biologics may be beneficial
 for more severe cases.
@@ -204,17 +229,17 @@ During the appointment, the healthcare provider will ask you questions about you
 Based on your diagnosis, your healthcare provider may recommend different treatments, such as topical medications, oral medications, or injections. In some cases, they may recommend hair transplantation surgery. They may also suggest lifestyle changes or counseling to help you manage stress or emotional factors that may be contributing to your hair loss.
 
 It is essential to address hair loss promptly, as some types of hair loss can be irreversible if left untreated. The sooner you seek treatment, the better your chances of regaining your hair.
-
+</details>
 ---
 
 
-**Question of Patient**: Doctor, I’ve been experiencing sudden jerks and twitches
+**QUESTION OF PATIENTSt**: Doctor, I’ve been experiencing sudden jerks and twitches
 in my muscles. It’s becoming very difficult to manage
 them on a daily basis.
 
-**Response of DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor, The symptoms you have mentioned are suggestive of muscle spasm. This can be due to many reasons like stress, anxiety, lack of sleep etc. I would suggest you to consult a physiotherapist and get evaluated. Physiotherapy like ultrasound and TENS therapy will be helpful in relieving the symptoms. Hope this will help you. Take care!
+**RESPONSE OF DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor, The symptoms you have mentioned are suggestive of muscle spasm. This can be due to many reasons like stress, anxiety, lack of sleep etc. I would suggest you to consult a physiotherapist and get evaluated. Physiotherapy like ultrasound and TENS therapy will be helpful in relieving the symptoms. Hope this will help you. Take care!
 
-
+<details><summary>RESPONSE OF OTHER METHODS</summary>
 **Response of ChatDoctor**: There are several medications that can help with Myoclonus. Are you taking any other medications?
 
 **Response of BLOOM-7b1-LoRA-Alpaca**: Sudden jerks and twitches in your muscles can be caused by a variety of conditions, including:
@@ -251,15 +276,17 @@ For more serious causes, such as neurological disorders, your doctor may refer y
 
 In the meantime, you can try to manage your muscle jerks and twitches by practicing relaxation techniques, getting enough sleep, and avoiding triggers such as stress or caffeine. If your symptoms are severe or affecting your daily life, you should seek medical attention right away.
 
+</details>
 ---
 
 
 
-**Question of Patient**: I think I have carbon monoxide poisoning. I feel dizzy
+**QUESTION OF PATIENTS**: I think I have carbon monoxide poisoning. I feel dizzy
 and nauseous
 
-**Response of DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concern. Carbon monoxide is a colorless, odorless gas that is produced by incomplete combustion of organic materials such as wood, gasoline, and kerosene. The symptoms of carbon monoxide poisoning include nausea, vomiting, headache, dizziness, weakness, and confusion. If you have any of these symptoms, you should seek immediate medical attention. Hope I have answered your query. Let me know if I can assist you further!
+**RESPONSE OF DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concern. Carbon monoxide is a colorless, odorless gas that is produced by incomplete combustion of organic materials such as wood, gasoline, and kerosene. The symptoms of carbon monoxide poisoning include nausea, vomiting, headache, dizziness, weakness, and confusion. If you have any of these symptoms, you should seek immediate medical attention. Hope I have answered your query. Let me know if I can assist you further!
 
+<details><summary>RESPONSE OF OTHER METHODS</summary>
 
 **Response of ChatDoctor**: I recommend that you get medical attention immediately
 and start taking a breathing treatment with 100% oxygen. You should also receive an injection of the drug "Diamox" which helps to reduce the symptoms of Carbon
@@ -279,15 +306,16 @@ It is crucial to address carbon monoxide poisoning promptly, as the longer you a
 
 If you suspect you have been exposed to carbon monoxide, it is important to take steps to prevent it from happening again. Have your appliances checked regularly, install carbon monoxide detectors in your home, and avoid using gas-powered equipment in enclosed spaces.
 
+</details>
 ---
 
 
-**Question of Patient**: I have been experiencing memory problems and confusion
+**QUESTION OF PATIENTSt**: I have been experiencing memory problems and confusion
 lately. I think I might have Wernicke Korsakoff syndrome.
 
-**Response of DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concerns. Wernicke Korsakoff syn Chat Doctor!
+**RESPONSE OF DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concerns. Wernicke Korsakoff syn Chat Doctor!
 
-
+<details><summary>RESPONSE OF OTHER METHODS</summary>
 **Response of ChatDoctor**: Doctor: Yes, we can try some medications such as thiamine and memantine, but it is best to consult with a
 neurologist for further evaluation and treatment.
 
@@ -302,8 +330,8 @@ If you have Wernicke-Korsakoff syndrome, early diagnosis and treatment are cruci
 In addition to treatment, lifestyle changes may be recommended to prevent further damage, such as avoiding alcohol and maintaining a healthy diet.
 
 It is important to seek medical attention promptly if you are experiencing memory problems and confusion, as prompt treatment can improve your chances of recovery. Your doctor may perform a physical exam, blood tests, imaging studies, or other tests to evaluate your condition and determine the appropriate treatment plan.
-
+</details>
 ---
-
+</details>
 
 
