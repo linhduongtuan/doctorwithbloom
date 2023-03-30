@@ -175,21 +175,21 @@ We emphasize that ChatDoctor is for academic research only and any commercial us
 
 <details><summary>ACKNOWLEDGMENT</summary>
 
-I would like to express my gratitude to [Phenikaa University](https://phenikaa-uni.edu.vn/en) and [Phenikaa-X](https://phenikaa-x.com/) company, without whose support, this fine-tuned model would not have been possible. Their generosity in providing me with access to their computation resources, namely A100 and RTX 4090, allowed me to train and test my work successfully. 
+1) I would like to express my gratitude to [Phenikaa University](https://phenikaa-uni.edu.vn/en) and [Phenikaa-X](https://phenikaa-x.com/) company, without whose support, this fine-tuned model would not have been possible. Their generosity in providing me with access to their computation resources, namely A100 and RTX 4090, allowed me to train and test my work successfully. 
 
-I would also like to extend my thanks to [Pham Ngoc Ninh](https://github.com/phamngocninh), who worked diligently to address any bugs and refine this model. Ninh's assistance was greatly appreciated.
+2) I would also like to extend my thanks to [Pham Ngoc Ninh](https://github.com/phamngocninh), who worked diligently to address any bugs and refine this model. Ninh's assistance was greatly appreciated.
 </details>
 
 <details><summary>EXAMPLE OUTPUTS</summary>
 
 
-**QUESTION OF PATIENTS**: Doctor, I have been experiencing vomiting, nausea, and
+**QUESTION OF A PATIENT**: Doctor, I have been experiencing vomiting, nausea, and
 abdominal pain. I recently found out that I have pyloric
 stenosis. What medications should I take for it?
 
 
 
-**RESPONSE OF  DOCTORWITHBLOOM**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
+**RESPONSE OF DOCTORWITHBLOOM**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
 
@@ -209,7 +209,7 @@ The treatment for pyloric stenosis typically involves surgical intervention, in 
 ---
 
 
-**QUESTION OF PATIENTS**: Hi doctor, I have been losing hair rapidly for the past
+**QUESTION OF A PATIENT**: Hi doctor, I have been losing hair rapidly for the past
 few months. I think I might have Alopecia. What should
 I do?
 
@@ -233,7 +233,7 @@ It is essential to address hair loss promptly, as some types of hair loss can be
 ---
 
 
-**QUESTION OF PATIENTS**: Doctor, I’ve been experiencing sudden jerks and twitches
+**QUESTION OF A PATIENT**: Doctor, I’ve been experiencing sudden jerks and twitches
 in my muscles. It’s becoming very difficult to manage
 them on a daily basis.
 
@@ -281,7 +281,7 @@ In the meantime, you can try to manage your muscle jerks and twitches by practic
 
 
 
-**QUESTION OF PATIENTS**: I think I have carbon monoxide poisoning. I feel dizzy
+**QUESTION OF A PATIENT**: I think I have carbon monoxide poisoning. I feel dizzy
 and nauseous
 
 **RESPONSE OF DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concern. Carbon monoxide is a colorless, odorless gas that is produced by incomplete combustion of organic materials such as wood, gasoline, and kerosene. The symptoms of carbon monoxide poisoning include nausea, vomiting, headache, dizziness, weakness, and confusion. If you have any of these symptoms, you should seek immediate medical attention. Hope I have answered your query. Let me know if I can assist you further!
@@ -310,7 +310,7 @@ If you suspect you have been exposed to carbon monoxide, it is important to take
 ---
 
 
-**QUESTION OF PATIENTSt**: I have been experiencing memory problems and confusion
+**QUESTION OF A PATIENT**: I have been experiencing memory problems and confusion
 lately. I think I might have Wernicke Korsakoff syndrome.
 
 **RESPONSE OF DOCTORWITHBLOOM**: Hello, Welcome to Chat Doctor. I have read your question and understand your concerns. Wernicke Korsakoff syn Chat Doctor!
@@ -331,7 +331,6 @@ In addition to treatment, lifestyle changes may be recommended to prevent furthe
 
 It is important to seek medical attention promptly if you are experiencing memory problems and confusion, as prompt treatment can improve your chances of recovery. Your doctor may perform a physical exam, blood tests, imaging studies, or other tests to evaluate your condition and determine the appropriate treatment plan.
 </details>
----
-</details>
+
 
 
