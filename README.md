@@ -45,7 +45,8 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 </details>
 
 <details><summary>HOW TO FINETUNE A MODEL?</summary>
-## Training (`finetune.py`)
+
+### Training (`finetune.py`)
 
 This file contains a straightforward application of PEFT to the Bloomz-7b1 model,
 as well as some code related to prompt construction and tokenization.
@@ -106,6 +107,7 @@ torchrun --nproc_per_node=8 --master_port=1234
 
 
 <details><summary>HOW TO INFERENCE?</summary>
+
 ## Inference (`generate.py`)
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
@@ -149,7 +151,7 @@ or [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp).
 
  <details><summary>ABSTRACT</summary>
  
- ## Introduction
+## Introduction
 The development of instruction-following large language models (LLMs) such as ChatGPT has garnered significant attention due to their remarkable success in instruction understanding and human-like response generation.
 These auto-regressive LLMs are pre-trained over web-scale natural languages by predicting the next token and then fine-tuned to follow large-scale human instructions.
 Also, they have shown strong performances over a wide range of NLP tasks and generalizations to unseen tasks, demonstrating their potential as a unified solution for various problems such as natural language understanding, text generation, and conversational AI.
