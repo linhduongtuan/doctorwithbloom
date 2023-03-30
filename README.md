@@ -45,7 +45,7 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 </details>
 
 <details><summary>HOW TO FINETUNE A MODEL?</summary>
-Training (`finetune.py`)
+## Training (`finetune.py`)
 
 This file contains a straightforward application of PEFT to the Bloomz-7b1 model,
 as well as some code related to prompt construction and tokenization.
@@ -106,7 +106,7 @@ torchrun --nproc_per_node=8 --master_port=1234
 
 
 <details><summary>HOW TO INFERENCE?</summary>
-Inference (`generate.py`)
+## Inference (`generate.py`)
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `tloen/alpaca-lora-7b`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
 
@@ -128,7 +128,7 @@ python chat.py
 
 <details><summary>HOW TO EXPORT A FINETUNED WEIGHT?</summary>
 
-Checkpoint export (`export_*_checkpoint.py`)
+## Checkpoint export (`export_*_checkpoint.py`)
 
 These files contain scripts that merge the LoRA weights back into the base model
 for export to Hugging Face format and to PyTorch `state_dicts`.
@@ -231,7 +231,7 @@ It is essential to address hair loss promptly, as some types of hair loss can be
 ---
 
 
-**QUESTION OF PATIENTSt**: Doctor, I’ve been experiencing sudden jerks and twitches
+**QUESTION OF PATIENTS**: Doctor, I’ve been experiencing sudden jerks and twitches
 in my muscles. It’s becoming very difficult to manage
 them on a daily basis.
 
