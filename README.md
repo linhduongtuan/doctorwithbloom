@@ -197,10 +197,10 @@ We emphasize that ChatDoctor is for academic research only and any commercial us
 abdominal pain. I recently found out that I have pyloric
 stenosis. What medications should I take for it?
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1**: Hi welcome to Chat Doctor. I have gone through your question. As you have pyloric stenosis, you should take proton pump inhibitors like omeprazole or pantoprazole or lansoprazole or rabeprazole. You should also take antacid like omeprazole or pantoprazole or lansoprazole or rabeprazole. You should also take antiemetic like ondansetron or metoclopramide or prochlorperazine. 
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1**: Hi welcome to Chat Doctor. I have gone through your question. As you have pyloric stenosis, you should take proton pump inhibitors like omeprazole or pantoprazole or lansoprazole or rabeprazole. You should also take antacid like omeprazole or pantoprazole or lansoprazole or rabeprazole. You should also take antiemetic like ondansetron or metoclopramide or prochlorperazine. 
 
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1-mt**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1-mt**: Hi welcome to Chat Doctor. I understand your query and concern. Pyloric stenosis is the narrowing of the pyloric canal, which is the narrowest part of the stomach. It is a congenital abnormality of the gastrointestinal tract. It is usually asymptomatic and is detected incidentally on routine upper GI endoscopy. It is usually treated conservatively. I advise you to consult a gastroenterologist for diagnosis and management. You may need to take proton pump inhibitors like omeprazole or pantoprazole. You may also need to take a course of antibiotics like amoxicillin or metronidazole. Hope I have answered your query. I will be happy to help you further. Wishing you good health. Take care.
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
 
@@ -224,16 +224,17 @@ The treatment for pyloric stenosis typically involves surgical intervention, in 
 few months. I think I might have Alopecia. What should
 I do?
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1**: Hi, Thanks for asking. Based on your query, my opinion is as follows.
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1**: Hi, Thanks for asking. Based on your query, my opinion is as follows.
 1. Alopecia areata is an autoimmune disease.
 2. It is characterized by patchy hair loss.
 3. Treatment is with steroids.
 4. Consult your dermatologist. 
+
 Hope it helps. Any further queries, happy to help again.
 
 
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1-mt**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. 
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1-mt**: Hi, Welcome to Chat Doctor. I am Chat Doctor. I have read your question with care and understand your concerns. I would like to help you in the best possible way. Alopecia areata is a disease in which hair follicles are destroyed. It is a disease of the immune system. There is no cure for this disease. It is a disease of the immune system. 
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
 
@@ -257,12 +258,13 @@ It is essential to address hair loss promptly, as some types of hair loss can be
 in my muscles. It’s becoming very difficult to manage
 them on a daily basis.
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1**: Hello, I have gone through your query. Thanks for using Chat Doctor. Sudden jerks and twitches in the muscles can be due to muscle spasm. It can be due to stress or anxiety. I would suggest you to take muscle relaxant like methylcobalamine and muscle relaxant like cyclobenzaprine. You can also take muscle relaxant like cyclobenzaprine and muscle relaxant like cyclobenzaprine. 
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1**: Hello, I have gone through your query. Thanks for using Chat Doctor. Sudden jerks and twitches in the muscles can be due to muscle spasm. It can be due to stress or anxiety. I would suggest you to take muscle relaxant like methylcobalamine and muscle relaxant like cyclobenzaprine. You can also take muscle relaxant like cyclobenzaprine and muscle relaxant like cyclobenzaprine. 
 
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1-mt**: Hello, Welcome to Chat Doctor, The symptoms you have mentioned are suggestive of muscle spasm. This can be due to many reasons like stress, anxiety, lack of sleep etc. I would suggest you to consult a physiotherapist and get evaluated. Physiotherapy like ultrasound and TENS therapy will be helpful in relieving the symptoms. Hope this will help you. Take care!
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1-mt**: Hello, Welcome to Chat Doctor, The symptoms you have mentioned are suggestive of muscle spasm. This can be due to many reasons like stress, anxiety, lack of sleep etc. I would suggest you to consult a physiotherapist and get evaluated. Physiotherapy like ultrasound and TENS therapy will be helpful in relieving the symptoms. Hope this will help you. Take care!
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
+
 **Response of ChatDoctor**: There are several medications that can help with Myoclonus. Are you taking any other medications?
 
 **Response of BLOOM-7b1-LoRA-Alpaca**: Sudden jerks and twitches in your muscles can be caused by a variety of conditions, including:
@@ -307,10 +309,10 @@ In the meantime, you can try to manage your muscle jerks and twitches by practic
 **QUESTION OF A PATIENT**: I think I have carbon monoxide poisoning. I feel dizzy
 and nauseous
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1**: Thanks for your question on Chat Doctor. I can understand your concern. Yes, carbon monoxide poisoning can cause dizziness and nausea. So better to get done chest x-ray and PFT (Pulmonary Function Test) to rule out CO poisoning. If both are normal than no need to worry about CO poisoning. Hope I have solved your query. I will be happy to help you further. Wish you good health. Thanks.
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1**: Thanks for your question on Chat Doctor. I can understand your concern. Yes, carbon monoxide poisoning can cause dizziness and nausea. So better to get done chest x-ray and PFT (Pulmonary Function Test) to rule out CO poisoning. If both are normal than no need to worry about CO poisoning. Hope I have solved your query. I will be happy to help you further. Wish you good health. Thanks.
 
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1-mt**: Hello, Welcome to Chat Doctor. I have read your question and understand your concern. Carbon monoxide is a colorless, odorless gas that is produced by incomplete combustion of organic materials such as wood, gasoline, and kerosene. The symptoms of carbon monoxide poisoning include nausea, vomiting, headache, dizziness, weakness, and confusion. If you have any of these symptoms, you should seek immediate medical attention. Hope I have answered your query. Let me know if I can assist you further!
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1-mt**: Hello, Welcome to Chat Doctor. I have read your question and understand your concern. Carbon monoxide is a colorless, odorless gas that is produced by incomplete combustion of organic materials such as wood, gasoline, and kerosene. The symptoms of carbon monoxide poisoning include nausea, vomiting, headache, dizziness, weakness, and confusion. If you have any of these symptoms, you should seek immediate medical attention. Hope I have answered your query. Let me know if I can assist you further!
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
 
@@ -339,9 +341,9 @@ If you suspect you have been exposed to carbon monoxide, it is important to take
 **QUESTION OF A PATIENT**: I have been experiencing memory problems and confusion
 lately. I think I might have Wernicke Korsakoff syndrome.
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1**:
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1**: Hello, Welcome to Chat Doctor. I am Chat Doctor answering your query. I can understand your concern. If you are suffering from memory loss and confusion, then you need to get a brain scan done to rule out any brain pathology. If there is any brain pathology then you need to get a treatment for that. If there is no brain pathology then you need to get a treatment for Wernicke Korsakoff syn Chat Doctor. I hope I have answered your query. I will be happy to help you further. If you have any further query then you can write to me. I will be happy to help you. Wish you good health!
 
-**RESPONSE OF DOCTORWITHBLOOM using bloomz-7b1-mt**: Hello, Welcome to Chat Doctor. I am Chat Doctor answering your query. I can understand your concern. If you are suffering from memory loss and confusion, then you need to get a brain scan done to rule out any brain pathology. If there is any brain pathology then you need to get a treatment for that. If there is no brain pathology then you need to get a treatment for Wernicke Korsakoff syn Chat Doctor. I hope I have answered your query. I will be happy to help you further. If you have any further query then you can write to me. I will be happy to help you. Wish you good health!
+**RESPONSE OF DOCTORwithBLOOM using bloomz-7b1-mt**: Hello, Welcome to Chat Doctor. I have read your question and understand your concerns. Wernicke Korsakoff syn Chat Doctor. 
 
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
