@@ -22,6 +22,16 @@ Without hyperparameter tuning, the LoRA model produces outputs comparable to the
 
 </details>
 
+
+<details><summary>HISTORY UPDATE?</summary>
+
+
+_**Update 2023-04-04:** weights have been updated with the Chatdoctor-200k dataset from a paper [ChatDoctor: A Medical Chat Model Fine-tuned on LLaMA Model using Medical Domain Knowledge](https://arxiv.org/pdf/2303.14070.pdf). This should intensify this ability of BLOOMZ-7b1 for generating programming languages, even BLOOM-7b1 has alread trained on datasets containing 13 programming languages. Additionally, we will publicly release our trained weights for these finetuned models at HuggingFace Hub with the addresse (`'LinhDuong/doctorwithbloomz-7b1'`)[https://huggingface.co/LinhDuong/doctorwithbloomz-7b1]_
+
+_**Update 2023-03-28:** weights have been updated with the Chatdoctor-200k dataset from a paper [ChatDoctor: A Medical Chat Model Fine-tuned on LLaMA Model using Medical Domain Knowledge](https://arxiv.org/pdf/2303.14070.pdf). This should intensify this ability of BLOOMZ-7b1 for generating programming languages, even BLOOM-7b1 has alread trained on datasets containing 13 programming languages. Additionally, we will publicly release our trained weights for these finetuned models at HuggingFace Hub with the addresse (`'LinhDuong/doctorwithbloomz-7b1-mt'`)[https://huggingface.co/LinhDuong/doctorwithbloomz-7b1-mt]_
+
+</details>
+
 <details><summary>HOW TO SETUP?</summary>
 
 1. Install dependencies
