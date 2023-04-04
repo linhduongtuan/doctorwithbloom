@@ -1,5 +1,5 @@
 ![alt text](https://huggingface.co/blog/assets/86_bloom_megatron_deepspeed/bloom-banner.png)
-## 🌲🤏 BLOOM-LoRA: Low-Rank Adaptation for InstructorDoctor-200Kd ataset.
+## 🌲🤏 BLOOM-LoRA: Low-Rank Adaptation for InstructorDoctor-200K dataset.
 
 <details><summary>REASONS WHY?</summary>
 
