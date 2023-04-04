@@ -347,6 +347,7 @@ lately. I think I might have Wernicke Korsakoff syndrome.
 
 
 <details><summary>RESPONSE OF OTHER METHODS</summary>
+
 **Response of ChatDoctor**: Doctor: Yes, we can try some medications such as thiamine and memantine, but it is best to consult with a
 neurologist for further evaluation and treatment.
 
